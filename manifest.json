@@ -1,0 +1,22 @@
+{
+
+    "manifest_version": 2, 
+    "name": "Find It Used",
+    "version": "1.0",
+  
+    "description": "Find It Used users to quickly and easily check popular online shopping sites to find discounts on Amazon products.",
+  
+    "icons": {
+      "48": "icons/border-48.png",
+      "96": "icons/border-96.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.google.com/*"],
+        "js": ["finditused.js"]
+      }
+    ]
+  
+}
+  
