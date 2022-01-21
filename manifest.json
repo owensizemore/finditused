@@ -13,21 +13,14 @@
     },
 
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "tabs"
     ],
 
     "browser_action": {
         "default_icon": "icons/border-32.png",
         "default_title": "Find It Used",
         "default_popup": "popup/index.html"
-    },
-  
-    "content_scripts": [
-      {
-        "matches": ["*://*.google.com/*"],
-        "js": ["finditused.js"]
-      }
-    ]
-  
+    }
 }
   
