@@ -7,8 +7,19 @@
     "description": "Find It Used users to quickly and easily check popular online shopping sites to find discounts on Amazon products.",
   
     "icons": {
-      "48": "icons/border-48.png",
-      "96": "icons/border-96.png"
+        "32": "icons/border-32.png",
+        "48": "icons/border-48.png",
+        "96": "icons/border-96.png"
+    },
+
+    "permissions": [
+        "activeTab"
+    ],
+
+    "browser_action": {
+        "default_icon": "icons/border-32.png",
+        "default_title": "Find It Used",
+        "default_popup": "popup/index.html"
     },
   
     "content_scripts": [
