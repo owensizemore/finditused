@@ -1,0 +1,28 @@
+{
+  "name": "finditused",
+  "version": "1.0.0",
+  "description": "Package for Find It Used Firefox Extension.",
+  "main": "sass/mystyles.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owensizemore/finditused.git"
+  },
+  "author": "Owen Sizemore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/owensizemore/finditused/issues"
+  },
+  "homepage": "https://github.com/owensizemore/finditused#readme",
+  "devDependencies": {
+    "bulma": "^0.9.3",
+    "node-sass": "^7.0.1"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  }
+}
